@@ -91,7 +91,7 @@ body {
     width: 175px;
     position: relative;
     left: 450px;
-    top: 30px;
+    top: 5px;
 }
 #login-form form p {
     font-size: 11pt;
@@ -123,7 +123,7 @@ body {
     background: white;
     color: #ff8700;
     font-family: Arial, serif;
-    font-size: 12px;
+    font-size: 11px;
 }
 /*Main Menu*/
 hr {
@@ -170,7 +170,7 @@ hr {
 #login_menu ul li {
     display: inline;
     list-style-image: none;
-    padding: 0 7px 0 7px;
+    padding: 0 3px 0 8px;
     border-right: 1px solid black;
 }
 #login_menu ul li:last-child {
