@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+{{block.super}}Sony XPeria XA Ultra
+{% endblock title %}
+
+{% block content%}
+    <div id="content_wrapper">
+        <div id="mainContent" class="mainContent centered_1060">
+            <h1>Sony Xperia XA Ultra</h1>
+            <div id="image">
+                <a href="{% static 'images/phones/sony/xperia_xa.jpeg' %}" target="_blank">
+                    <img class="shortInfoImg" src="{% static 'images/phones/sony/sm_xperia_xa.jpg' %}" alt="Sony Xperia XA Ultra">
+                </a>
+            </div>
+            <div class="shortInfo">
+                <h2>Описание товара</h2>
+                <p class="shortInfo">Sony Xperia XA Ultra(3GB RAM,6" 1920x1080,4G+BT+WiFi+GPS,<br>16Gb+microSD,
+                    21.5Mpx,Andr)</p>
+                <input id="buy-button" type="button" value="Купить">
+            </div>
+            <table class="char_table">
+                <thead>
+                <tr>
+                    <th id="table_header" colspan="5">Характеристики товара</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td class="head_cell" rowspan="2">Процессор<br>и<br>память</td>
+                    <td class="exhead_cell">Процессор</td>
+                    <td class="exhead_cell">Кол-во ядер</td>
+                    <td class="exhead_cell">Объем ОЗУ</td>
+                </tr>
+                <tr>
+                    <td>MediaTek Helio P10</td>
+                    <td>8</td>
+                    <td>3072 Гб</td>
+                </tr>
+                <tr>
+                    <td class="head_cell" rowspan="2">Экран</td>
+                    <td class="exhead_cell">Диагональ</td>
+                    <td class="exhead_cell">Разрешение</td>
+                    <td class="exhead_cell">PPI</td>
+                </tr>
+                <tr>
+                    <td>6"</td>
+                    <td>1920x1080</td>
+                    <td>365</td>
+                </tr>
+                <tfoot>
+                <tr>
+                    <td class="table_footer" colspan="5">
+                        Технические характеристики могут быть изменены производителем без предварительного уведомления
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+            <h2>Подробное описание товара</h2>
+            <ul class="info">
+                <li>Сеть 2G: GSM GPRS/EDGE</li>
+                <li>Сеть 3G: UMTS HSPA+</li>
+                <li>Сеть 4G: LTE</li>
+                <li>Размер SIM-карты: Nano SIM</li>
+                <li>Операционная система: Google Android</li>
+                <li>Тип экрана: IPS, технология Mobile BRAVIA Engine 2</li>
+                <li>Размер экрана: 6 дюймов</li>
+                <li>Разрешение экрана: Full HD, 1080p</li>
+                <li>Мультитач: до 10 пальцев</li>
+                <li>Центральный процессор: MediaTek MT6755</li>
+                <li>Количество ядер: 8</li>
+                <li>Графический ускоритель: Mali T860</li>
+                <li>Оперативная память: 3 Гб</li>
+                <li>Встроенная память: 16 Гб</li>
+                <li>Поддержка карт памяти: microSD до 200 Гб</li>
+                <li>Основная камера: 1/2,4-дюймовая RS 21,5-мегапиксельная матрица Sony Exmor RS</li>
+                <li>Фронтальная камера: 1/2,6-дюймовая 16-мегапиксельная матрица Sony Exmor RS для мобильных устройств
+                </li>
+                <li>Беспроводная связь: Wi-Fi MIMO, Bluetooth 4.1, NFC</li>
+                <li>Система навигации: GPS, с поддержкой A-GPS</li>
+                <li>Датчики: Акселерометр, гироскоп, датчик приближения</li>
+                <li>Дополнительно: FM-приемник</li>
+                <li>Разъемы: microUSB, 3.5 для наушников</li>
+                <li>Аккумулятор: Li-Ion 2700 мАч, Несъемный</li>
+                <li>Габариты: 164 x 79 x 8,4 мм</li>
+                <li>Вес: 202 гр</li>
+            </ul>
+        </div>
+    </div>
+{% endblock content %}

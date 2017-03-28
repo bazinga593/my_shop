@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+{{ block.super }}Login
+{% endblock title %}
+
+{% block content %}
+    <div id="login_wrapper">
+    <div id="content" class="content centered_1060">
+        <div id="login-form">
+            {% if not user.is_authenticated %}
+                {% if errors %}
+                    <p id="wrong_login">Wrong login or password!</p>
+                {% endif %}
+            <form method="post" action="/user/login/">
+                {% csrf_token %}
+                <p>Enter login:</p>
+                <input type="text" name="login" value="" placeholder="User name">
+                <p>Enter password:</p>
+                <input type="password" name="password" value="" placeholder="Password">
+                <p><button type="submit" class="btn btn-default">Login</button></p>
+            </form>
+            {% else %}
+                {{ user.username }},
+                <a href="/user/logout/">logout</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+    <div id="feedback_wrapper">
+        <div id="feedback" class="centered_1060">
+            <div id="feedback_twitter" class="feedback_block">
+                <h3>TWITTER</h3>
+                <div id="twitter_message_1" class="twitter_message">
+                    <img src="{% static 'images/feedback/twitter_mark.png' %}" alt="twitter_mark">
+                    <p><span class="colored_orange">
+                        @ Laxury Shop </span>dolor sit amet, consec tet uo adi. In interdum aliquet orci vitae.</p>
+                    <div id="feedback_twitter_message_time_1" class="message_time">
+                        <span>25 minutes ago</span>
+                    </div>
+                </div>
+                <div id="twitter_message_2" class="twitter_message">
+                    <img src="{% static 'images/feedback/twitter_mark.png' %}" alt="twitter_mark">
+                    <p><span class="colored_orange">
+                        @ Laxury Shop </span>dolor sit amet, consec tet uo adi. In interdum aliquet orci vitae.</p>
+                    <div id="feedback_twitter_message_time_2" class="message_time">
+                        <span>45 minutes ago</span>
+                    </div>
+                </div>
+                <div id="twitter_message_3" class="twitter_message">
+                    <img src="{% static 'images/feedback/twitter_mark.png' %}" alt="twitter_mark">
+                    <p><span class="colored_orange">
+                        @ Laxury Shop </span>dolor sit amet, consec tet uo adi. In interdum aliquet orci vitae.</p>
+                    <div id="feedback_twitter_message_time" class="message_time">
+                        <span>one day ago</span>
+                    </div>
+                </div>
+                <div id="twitter_link">
+                    <a href="#" class="colored_orange">Follow us on twitter >></a>
+                </div>
+            </div>
+            <div id="feedback_facebook" class="feedback_block">
+                <h3>FACEBOOK</h3>
+                <div id="feedback_facebook_like">
+                    <img src="{% static 'images/feedback/facebook_like.png' %}" alt="facebook like">
+                    <p>120 people like <span class="colored_orange">Luxury </span>Shop</p>
+                </div>
+                <table>
+                    <tr>
+                        <td><img src="{% static 'images/feedback/facebook/01.jpg' %}"><span>Alex</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/02.jpg' %}"><span>Lorem</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/03.jpg' %}"><span>Ipust</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="{% static 'images/feedback/facebook/04.jpg' %}"><span>Alex</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/05.jpg' %}"><span>Lorem</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/06.jpg' %}"><span>Ipust</span></td>
+                    </tr>
+                </table>
+                <div id="feedback_facebook_mark">
+                    <img src="{% static 'images/feedback/facebook_mark.png' %}" alt="facebook mark">
+                    <p>Facebook social plagin</p>
+                </div>
+            </div>
+            <div id="feedback_about" class="feedback_block">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adi pise seo cing elit. Etiam neque velit,
+                    blandi sed scele risque qius, vulpu tate vel lorem. Sed luctus,
+                    seas pien elem entum viverra pellen tesque, odio turp ultrices sa pien, ut mollis mag na eros
+                    vitae.</p>
+                <div id="mark_about">
+                    <div id="mark_about_1">
+                        <img src="{% static 'images/feedback/home_mark.png' %}" class="mark_about">
+                        <p>68 - Duis Ipsum Street.<br>Bandti Aliquam Vitae. New York</p>
+                    </div>
+                    <div id="mark_about_2">
+                        <img src="{% static 'images/feedback/mail_mark.png' %}" class="mark_about">
+                        <p><a href="mailto:#">Click Here<br>To Email Us</a></p>
+                    </div>
+                    <div id="mark_about_3">
+                        <img src="{% static 'images/feedback/phone_mark.png' %}" class="mark_about">
+                        <p>(+84) 123 456 789<br>(+84) 93 668 2236</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

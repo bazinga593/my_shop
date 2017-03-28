@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+{{block.super}}About
+{% endblock title %}
+
+{% block content%}
+    <div id="content_wrapper">
+            <div id="content" class="content centered_1060">
+               <div id="contacts">
+            <div id="address">
+                <h2>Адрес</h2>
+                <p>
+                    <b>Телефон:</b> <a href="tel:+74950000001">+7-495-000-00-01</a><br>
+                    <b>Email:</b> <a href="mailto:barbiga@barbiga.ru">barbIga@barbIga.ru</a><br>
+                    <b>Адрес:</b> пгт. Красный Ручей, хата с края<br>
+                </p>
+                <iframe id="map" src="https://api-maps.yandex.ru/frame/v1/-/CVd6JF6G" width="500" height="400"
+                        frameborder="0"></iframe>
+                <p>Наш уникальный магазин обладает собственным складом, который расположен в шаговой доступности,
+                    <br> от станции
+                    &quot;Спелый борщевик&quot;, Владивостоко-Калининградского направления,<br>
+                    в гаражном товариществе им. Ю. Деточкина.
+                </p>
+            </div>
+            <div id="feedback-about">
+                <h2>Напишите нам</h2>
+                <form action="../menu/about.html">
+                    <fieldset>
+                        <legend>Введите имя:</legend>
+                        <input class="inputName" type="text" name="name" placeholder="Введите имя">
+                        <legend>Введите Email:</legend>
+                        <input class="inputMail" type="text" name="email" placeholder="Введите Email">
+                        <hr>
+                        <legend>Введите номер банковской карты:</legend>
+                        <input class="inputCard" type="text" name="cardNumber" size='16' placeholder="Введите номер карты">
+                        <legend>Введите проверочный код:</legend>
+                        <input class="inputCardCvc" type="text" name="cvcNumber" size='3' placeholder="CVC">
+                        <hr>
+                        <legend>Тема сообщения</legend>
+                        <select name="theme" size="1">
+                            <option value="1">Отзыв</option>
+                            <option value="2">Жалоба</option>
+                            <option value="3">Вопрос</option>
+                            <option value="4">Скучно</option>
+                        </select><br>
+                        <textarea class="inputText" name="message"></textarea>
+                        <br><input  type="submit" name="submit" value='Отправить' title="Отправить">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+            </div>
+        </div>
+{% endblock content %}

@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.notebooks {
+    width: 100%;
+}
+.notebooks h2 {
+    text-align: center;
+}
+.notebooks div {
+    display: inline;
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+.phones {
+    width: 100%;
+    height: 600px;
+    padding-left: 60px;
+}
+.phones h2 {
+    text-align: center;
+}
+.phones div {
+    display: inline;
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+.phones a {
+    clear: both;
+}
+/*End catalog*/
+
+/*Main content*/
+.mainContent {
+    padding-left: 120px;
+    width: 760px;
+}
+.mainContent h2 {
+    color:black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    padding-left: 60px;
+}
+
+.mainContent h3 {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #eeeeee;
+}
+.mainContent p:first-letter {
+    font-family: Laksaman, serif;
+    font-size: 1.4em;
+    color: deeppink;
+}
+#image {
+    float: left;
+}
+.shortInfo {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-heigextht: 24px;
+}
+
+.shortInfoImg {
+    border: 2px solid lightgrey;
+}
+.shortInfoImg:hover {
+    border: none;
+    padding: 2px;
+}
+#buy-button {
+    background: black;
+    color: #bacfed;
+    font-size: 15pt;
+}
+#buy-button:hover {
+    background: blueviolet;
+    color: yellow;
+}
+#buy-button:active {
+    background: green;
+    color: red;
+}
+
+.info {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.charInfo ul {
+    list-style: outside;
+    font-style: oblique;
+}
+
+
+/*CharTable*/
+.char_table {
+    width: 100%;
+    clear: both;
+    border-collapse: collapse;
+}
+.char_table th {
+    background-color: #eaeaea;
+}
+
+.char_table td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+#table_header {
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 50px;
+}
+.exhead_cell {
+    font-weight:bold;
+    font-style: italic;
+    color: #f8f8f8;
+    background-color: #707070;
+}
+.head_cell {
+    font-weight: bolder;
+    font-style: inherit;
+    background-color: #606060;
+    color: white;
+}
+.table_footer {
+    font-style: italic;
+    font-weight: inherit;
+    font-size: 0.8em;
+}
+
+#map {
+    width: 100%;
+    height: 374px;
+}
+#feedback-about {
+    width: 500px;
+    position: relative;
+    left: 25%;
+}
+/*End CharTable*/
+/*Contacts*/
+
+.inputName {
+    text-transform: capitalize;
+    color: red;
+    width: 150px;
+}
+.inputMail {
+    text-transform: capitalize;
+    background-color: purple;
+    color: yellow;
+    width: 200px;
+}
+.inputMail:focus {
+    background-color: green;
+    color: red;
+    width: 200px;
+}
+.inputCard {
+    width: 165px;
+}
+.inputText {
+    font-size: 1.2em;
+    font-style: italic;
+    width: 500px;
+    height: 300px;
+    text-transform: capitalize;
+}
+.address, .feedback {
+    border: 2px solid grey;
+}
+/*End contacts*/
+/*End content*/

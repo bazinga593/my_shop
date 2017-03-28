@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/stylesold.css' %}">
+    <title>Huckster&nbsp;|&nbsp;
+    {% block title%}
+    {% endblock title %}
+    </title>
+</head>
+<body>
+    <div id="container">
+        <div id="header_wrapper">
+            <div id="header" class="centered_1060">
+                <div id="logo">
+                    <a href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="Shop logo"></a>
+                </div>
+                <div id="nav">
+                    <div id="account_menu">
+                        <div id="header_selectors">
+                            <span>Language:</span>
+                            <select name="lang" size="1" title="Language">
+                                <option value="1">Русский</option>
+                                <option value="2">English</option>
+                                <option value="3">Spanish</option>
+                            </select>
+                            <span>Currency:</span>
+                            <select name="curr" size="1" title="Currency">
+                                <option value="1">RUB</option>
+                                <option value="2">USD</option>
+                                <option value="3">EUR</option>
+                            </select>
+                        </div>
+                        <div id="login_menu">
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                {% if user.is_authenticated %}
+                                    {{ user.username }},
+                                    <a href="/user/logout/">logout</a>
+                                {% else %}
+                                    <li><a href="{% url 'login' %}">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="main_menu">
+                        <ul>
+                            <li class="menu_item_active"><a href="{% url 'index' %}">HOME</a></li>
+                            <li class="menu_item"><a href="{% url 'iphone' %}">IPHONE</a></li>
+                            <li class="menu_item"><a href="{% url 'htc' %}">HTC</a></li>
+                            <li class="menu_item"><a href="{% url 'blackberry' %}">BLACKBERRY</a></li>
+                            <li class="menu_item"><a href="{% url 'samsung' %}">SAMSUNG</a></li>
+                            <li class="menu_item"><a href="{% url 'sony' %}">SONY</a></li>
+                            <li class="menu_item"><a href="{% url 'about' %}">ABOUT</a></li>
+                        </ul>
+                    </div>
+                    <div id="search_basket">
+                        <a href="#"><img src="{% static 'images/button/search_but.png' %}" alt="Search button"></a>
+                        <a href="#"><img src="{% static 'images/button/basket_but.png' %}" alt="Basket button"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock content %}
+        <div id="footer_menu_wrapper">
+            <div id="footer_menu" class="centered_1060">
+                <div id="footer_menu_newsletter" class="footer_menu_block">
+                    <h3>NEWSLETTER</h3>
+                    <p>Lorem ipsum dolor sit amet, de consectetur adipiscing elit.</p>
+                    <input type="email" name="email" placeholder="Your email...">
+                    <a href="#"><img src="{% static 'images/button/mail_botton.png' %}"></a>
+                </div>
+                <div id="footer_menu_information" class="footer_menu_block">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div id="footer_menu_support" class="footer_menu_block">
+                    <h3>OUR SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div id="footer_menu_service" class="footer_menu_block">
+                    <h3>OUR SERVICE</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div id="footer_menu_payment" class="footer_menu_block">
+                    <h3>PAYMENT</h3>
+                    <p>(+84) 123 456 789</p>
+                    <div id="footer_payment_links">
+                        <a href="#" class="footer_payment_link"><img src="{% static 'images/button/pay_pal.jpg' %}"></a>
+                        <a href="#" class="footer_payment_link"><img src="{% static 'images/button/discover.jpg' %}"></a>
+                        <a href="#" class="footer_payment_link"><img src="{% static 'images/button/mastercard.jpg' %}"></a>
+                        <a href="#" class="footer_payment_link"><img src="{% static 'images/button/visa.jpg' %}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer_wrapper">
+            <div id="footer" class="centered_1060">
+                <div id="footer_text">
+                    <p>Copyright &copy; {% now 'Y' %}. All rights reserved.</p>
+                </div>
+                <div id="footer_button">
+                    <div id="footer_nav">
+                        <span class="round_footer_nav"><a href="#" class="footer_nav_link footer_nav_link_1"></a></span>
+                        <span class="round_footer_nav"><a href="#" class="footer_nav_link footer_nav_link_2"></a></span>
+                        <span class="round_footer_nav"><a href="#" class="footer_nav_link footer_nav_link_3"></a></span>
+                        <span class="round_footer_nav"><a href="#" class="footer_nav_link footer_nav_link_4"></a></span>
+                        <span class="round_footer_nav"><a href="#" class="footer_nav_link footer_nav_link_5"></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

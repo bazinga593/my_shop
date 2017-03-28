@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{block.super}}Index
+{% endblock title %}
+
+{% block content %}
+    <div id="content_iphone_logo_wrapper">
+        <div id="content_logo" class="centered_1060">
+            <div id="iphone_logo">
+                <img src="{% static 'images/logo_iphone.png' %}" alt="Iphone logo">
+            </div>
+            <div id="iphone_logo_text">
+                <h2>APPLE IPHONE 5</h2>
+                <p>Pellentesque habitant morbi tristique senectus et netus et<br>
+                    malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
+    </div>
+    <div id="content_banner_wrapper">
+        <div id="content_banners" class="centered_1060">
+            <div class="banner">
+                <div class="banner_logo">
+                    <a href="#"><img src="{% static 'images/banner/banner_logo_1.png' %}"></a>
+                </div>
+                <div id="banner_text_1" class="banner_text">
+                    <h3>SAMSUNG GALAXY S3</h3>
+                    <p>Etiam varius velit in arcu bibe<br>
+                        ndum dignissim maecenas.</p>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner_logo">
+                    <a href="#"><img src="{% static 'images/banner/banner_logo_2.png' %}"></a>
+                </div>
+                <div class="banner_text">
+                    <h3>iPHONE 5</h3>
+                    <p>The biggest thing to happen<br>to iPhone since iPhone.</p>
+                </div>
+            </div>
+            <div class="banner">
+                <div>
+                    <h3>XPERIA ARC S</h3>
+                </div>
+                <div class="banner_logo">
+                    <a href="#"><img src="{% static 'images/banner/banner_logo_3.png' %}"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content_product_wrapper">
+        <div id="content_product" class="centered_1060">
+            <h3>FEATURED PRODUCTS</h3>
+            <table id="content_product_table">
+                <tr>
+                    <td><a href="#"><img src="{% static 'images/product/product_1.png' %}" alt="product 1"></a></td>
+                    <td><a href="#"><img src="{% static 'images/product/product_2.png' %}" alt="product 2"></a></td>
+                    <td><a href="#"><img src="{% static 'images/product/product_3.png' %}" alt="product 3"></a></td>
+                    <td><a href="#"><img src="{% static 'images/product/product_4.png' %}" alt="product 4"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="{% static 'images/product/product_5.png' %}" alt="product 5"></a></td>
+                    <td><a href="#"><img src="{% static 'images/product/product_6.png' %}" alt="product 6"></a></td>
+                    <td><a href="#"><img src="{% static 'images/product/product_7.png' %}" alt="product 7"></a></td>
+                    <td><a href="#"><img src="{% static 'images/product/product_8.png' %}" alt="product 8"></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="feedback_wrapper">
+        <div id="feedback" class="centered_1060">
+            <div id="feedback_twitter" class="feedback_block">
+                <h3>TWITTER</h3>
+                <div id="twitter_message_1" class="twitter_message">
+                    <img src="{% static 'images/feedback/twitter_mark.png' %}" alt="twitter_mark">
+                    <p><span class="colored_orange">
+                        @ Laxury Shop </span>dolor sit amet, consec tet uo adi. In interdum aliquet orci vitae.</p>
+                    <div id="feedback_twitter_message_time_1" class="message_time">
+                        <span>25 minutes ago</span>
+                    </div>
+                </div>
+                <div id="twitter_message_2" class="twitter_message">
+                    <img src="{% static 'images/feedback/twitter_mark.png' %}" alt="twitter_mark">
+                    <p><span class="colored_orange">
+                        @ Laxury Shop </span>dolor sit amet, consec tet uo adi. In interdum aliquet orci vitae.</p>
+                    <div id="feedback_twitter_message_time_2" class="message_time">
+                        <span>45 minutes ago</span>
+                    </div>
+                </div>
+                <div id="twitter_message_3" class="twitter_message">
+                    <img src="{% static 'images/feedback/twitter_mark.png' %}" alt="twitter_mark">
+                    <p><span class="colored_orange">
+                        @ Laxury Shop </span>dolor sit amet, consec tet uo adi. In interdum aliquet orci vitae.</p>
+                    <div id="feedback_twitter_message_time" class="message_time">
+                        <span>one day ago</span>
+                    </div>
+                </div>
+                <div id="twitter_link">
+                    <a href="#" class="colored_orange">Follow us on twitter >></a>
+                </div>
+            </div>
+            <div id="feedback_facebook" class="feedback_block">
+                <h3>FACEBOOK</h3>
+                <div id="feedback_facebook_like">
+                    <img src="{% static 'images/feedback/facebook_like.png' %}" alt="facebook like">
+                    <p>120 people like <span class="colored_orange">Luxury </span>Shop</p>
+                </div>
+                <table>
+                    <tr>
+                        <td><img src="{% static 'images/feedback/facebook/01.jpg' %}"><span>Alex</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/02.jpg' %}"><span>Lorem</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/03.jpg' %}"><span>Ipust</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="{% static 'images/feedback/facebook/04.jpg' %}"><span>Alex</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/05.jpg' %}"><span>Lorem</span></td>
+                        <td><img src="{% static 'images/feedback/facebook/06.jpg' %}"><span>Ipust</span></td>
+                    </tr>
+                </table>
+                <div id="feedback_facebook_mark">
+                    <img src="{% static 'images/feedback/facebook_mark.png' %}" alt="facebook mark">
+                    <p>Facebook social plagin</p>
+                </div>
+            </div>
+            <div id="feedback_about" class="feedback_block">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adi pise seo cing elit. Etiam neque velit,
+                    blandi sed scele risque qius, vulpu tate vel lorem. Sed luctus,
+                    seas pien elem entum viverra pellen tesque, odio turp ultrices sa pien, ut mollis mag na eros
+                    vitae.</p>
+                <div id="mark_about">
+                    <div id="mark_about_1">
+                        <img src="{% static 'images/feedback/home_mark.png' %}" class="mark_about">
+                        <p>68 - Duis Ipsum Street.<br>Bandti Aliquam Vitae. New York</p>
+                    </div>
+                    <div id="mark_about_2">
+                        <img src="{% static 'images/feedback/mail_mark.png' %}" class="mark_about">
+                        <p><a href="mailto:#">Click Here<br>To Email Us</a></p>
+                    </div>
+                    <div id="mark_about_3">
+                        <img src="{% static 'images/feedback/phone_mark.png' %}" class="mark_about">
+                        <p>(+84) 123 456 789<br>(+84) 93 668 2236</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

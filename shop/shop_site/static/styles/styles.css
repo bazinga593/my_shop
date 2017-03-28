@@ -1,0 +1,541 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a:hover {
+    color: #ff8700;
+}
+body {
+    overflow-y: scroll;
+}
+.centered_1060 {
+    width: 1060px;
+    margin: 0 auto;
+}
+.colored_orange {
+    color: #ff8700;
+    text-decoration: none;
+}
+/*Wrappers*/
+#header_wrapper {
+    width: 100%;
+    height: 96px;
+    background: white;
+    border-top: 2px solid #ff8700;
+}
+#content_iphone_logo_wrapper {
+    width: 100%;
+    height: 465px;
+    background: #ececec;
+    border-bottom: 2px solid #ff8700;
+}
+#content_banner_wrapper {
+    width: 100%;
+    height: 250px;
+    background: white;
+}
+#content_product_wrapper {
+    width: 100%;
+    height: 651px;
+    background: white;
+}
+#feedback_wrapper {
+    width: 100%;
+    height: 390px;
+    background: white;
+}
+#footer_menu_wrapper {
+    width: 100%;
+    height: 205px;
+    background: #efefef;
+}
+#footer_wrapper {
+    width: 100%;
+    height: 54px;
+    background: #292929;
+}
+#content_wrapper {
+    width: 100%;
+    height: auto;
+    background: white;
+    border-top: 2px solid #ff8700;
+    border-bottom: 2px solid #ff8700;
+}
+#login_wrapper {
+    width: 100%;
+    height: 150px;
+    background: white;
+    border-top: 2px solid #ff8700;
+    border-bottom: 2px solid #ff8700;
+}
+/**/
+/*Header*/
+#logo {
+    float: left;
+    width: 140px;
+    height: 96px;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+#nav {
+    float: left;
+    height: 96px;
+    width: 792px;
+    margin-left: 10px;
+}
+#account_menu {
+    width: 100%;
+    height: 40px;
+}
+#login-form {
+    width: 175px;
+    position: relative;
+    left: 450px;
+    top: 30px;
+}
+#login-form form p {
+    font-size: 11pt;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#login-form button {
+    width: 173px;
+    margin-top: 10px;
+}
+#wrong_login {
+    position: absolute;
+    top: -25px;
+    color: red;
+}
+#header_selectors {
+    width: 236px;
+    height: 16px;
+    position: relative;
+    top: 10px;
+    padding-left: 13px;
+    margin-left: 10px;
+    font-family: Arial, serif;
+    font-size: 12px;
+    vertical-align: baseline;
+}
+#header_selectors select {
+    border: none;
+    background: white;
+    color: #ff8700;
+    font-family: Arial, serif;
+    font-size: 12px;
+}
+/*Main Menu*/
+hr {
+    margin-left: 20px;
+}
+#main_menu {
+    height: 47px;
+    width: 630px;
+    clear: both;
+}
+#main_menu ul {
+    padding-top: 18px;
+    padding-left: 37px;
+}
+#main_menu ul li {
+    display: inline;
+    list-style-image: none;
+    padding: 13px;
+}
+#main_menu ul li a {
+    font-size: 14px;
+    font-family: Arial, serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+#main_menu ul li a:visited {
+    /*color: #ff8700;*/
+}
+#main_menu ul li a:hover {
+    color: #ff8700;
+}
+/**/
+/*Login Menu*/
+#login_menu {
+    width: 266px;
+    height: 14px;
+    float: right;
+    text-align: center;
+    position: relative;
+    top: -8px;
+    left: -10px;
+}
+#login_menu ul li {
+    display: inline;
+    list-style-image: none;
+    padding: 0 7px 0 7px;
+    border-right: 1px solid black;
+}
+#login_menu ul li:last-child {
+    border: none;
+}
+#login_menu ul li a {
+    font-family: Arial, serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+#login_menu a:hover {
+    color: #ff8700;
+}
+/**/
+/*Search & Basket botton*/
+#search_basket {
+    position: relative;
+    float: right;
+    right: 40px;
+    top: -37px;
+}
+/**/
+
+/*Content*/
+/*Logo content*/
+#iphone_logo img {
+    padding-top: 62px;
+    padding-left: 193px;
+}
+#iphone_logo_text {
+    font-family: Arial, serif;
+    font-size: 15px;
+    padding-left: 540px;
+    position: relative;
+    z-index: 10;
+    top: -40px;
+}
+#iphone_logo_text h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+/**/
+/*Banners*/
+#content_banners {
+    height: 240px;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.banner {
+    width: 267px;
+    height: 165px;
+    display: inline;
+    float: left;
+    padding-left: 50px;
+}
+.banner_logo{
+    float: left;
+}
+.banner_text {
+    text-align: center;
+}
+.banner_text h3 {
+    font-family: Arial, serif;
+    font-size: 16px;
+    color: #4b4b4b;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.banner_text p {
+    font-family: Arial, serif;
+    font-size: 13px;
+    color: #808080;
+}
+#banner_text_1 {
+    padding-top: 15px;
+}
+/**/
+/*Content product*/
+#content_product {
+    width: 950px;
+    height: 100%;
+}
+#content_product_table {
+    padding-left: 60px;
+}
+#content_product h3 {
+    padding-left: 70px;
+    padding-bottom: 25px;
+}
+#content_product_table tr {
+    border-collapse: separate;
+}
+#content_product_table tr td {
+    width: 230px;
+    height: 285px;
+    background: #f8f8f8;
+    border:5px solid white;
+}
+#content_product_table tr td a img {
+    padding-left: 50px;
+}
+/**/
+/*Feedback*/
+#feedback {
+    width: 962px;
+    height: 100%;
+}
+.feedback_block {
+    width: 277px;
+    height: 320px;
+    float: left;
+    margin-top: 50px;
+}
+#feedback h3 {
+    font-family: Arial, serif;
+    font-size: 14px;
+}
+/*Feedback twitter*/
+#feedback_twitter {
+    width: 225px;
+    margin-left: 78px;
+}
+#feedback_twitter h3 {
+    padding-bottom: 10px;
+}
+.twitter_message {
+    padding-top: 5px;
+    border-bottom: 1px dotted #cdcdcd;
+    vertical-align: baseline;
+}
+.twitter_message img {
+    float: left;
+    margin-left: -10px;
+}
+.twitter_message p {
+    margin-left: 10px;
+    width: 270px;
+}
+#twitter_link {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.twitter_message p {
+    display: block;
+    width: 214px;
+    font-family: Arial, serif;
+    font-size: 12px;
+}
+.message_time {
+    padding-bottom: 18px;
+    padding-right: 5px;
+    font-family: Arial, serif;
+    font-size: 12px;
+    text-align: right;
+    color: #bababa;
+}
+/**/
+/*Feedback facebook*/
+#feedback_facebook {
+    padding-right: 72px;
+    width: 216px;
+    padding-left: 16px;
+    font-family: Arial, serif;
+    font-size: 12px;
+    margin-left: 60px;
+}
+#feedback_facebook h3{
+    padding-bottom: 25px;
+}
+#feedback_facebook img{
+    float: left;
+    padding-right: 15px
+}
+
+#feedback_facebook_mark {
+    padding-top: 15px;
+}
+#feedback_facebook table {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-top: 1px dotted #cdcdcd;
+    border-bottom: 1px dotted #cdcdcd;
+}
+#feedback_facebook table tr td {
+    text-align: center;
+    vertical-align: baseline;
+}
+#feedback_facebook table tr td img {
+    float: inherit;
+}
+#feedback_facebook_like  {
+    position: relative;
+    top: -10px;
+}
+#feedback_facebook_like p {
+    display: block;
+    width: 220px;
+    padding-top: 5px;
+}
+
+
+/**/
+/*Feedback About*/
+#feedback_about {
+    width: 250px;
+    padding-left: 45px;
+    font-family: Arial, serif;
+    font-size: 13px;
+}
+#feedback_about h3{
+    padding-bottom: 20px;
+}
+#feedback_about ul{
+    padding-top: 20px;
+}
+#mark_about {
+    width: 190px;
+    font-size: 11px;
+}
+.mark_about {
+    float: left;
+    padding-right: 10px;
+}
+#mark_about_1 {
+    padding-top: 25px;
+}
+#mark_about_2 {
+    padding-top: 15px;
+}
+#mark_about_3 {
+    padding-top: 15px;
+}
+/**/
+/*Footer menu*/
+#footer_menu ul li a:hover {
+    color: #ff8700;
+}
+.footer_menu_block {
+    float:left;
+    width: 135px;
+    height: 205px;
+    color: #6c6c6c;
+    padding-right: 25px;
+}
+.footer_menu_block a {
+    text-decoration: none;
+    color: #6c6c6c;
+
+}
+.footer_menu_block:first-child {
+    margin-left: 150px;
+}
+.footer_menu_block:first-child, .footer_menu_block:last-child {
+    width: 170px;
+}
+/**/
+.footer_menu_block h3 {
+    width: 115px;
+    margin-top: 25px;
+    border-bottom: 2px solid white;
+    color: #6c6c6c;
+    font-family: Arial, serif;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+/*Footer Newsletter*/
+#footer_menu_newsletter p {
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: Arial, serif;
+}
+#footer_menu_newsletter img {
+    margin-top: 25px;
+}
+#footer_menu_newsletter input {
+    width: 140px;
+    height: 23px;
+    float: left;
+    border: none;
+    margin-top: 25px;
+}
+/**/
+/*Footer Information*/
+#footer_menu_information ul {
+    margin-top: 25px;
+    padding-left: 5px;
+}
+.footer_menu_block {
+    list-style: square inside;
+    font-family: Arial, serif;
+    font-size: 12px;
+}
+/**/
+/*Footer Support*/
+#footer_menu_support ul {
+    margin-top: 25px;
+    padding-left: 5px;
+}
+/**/
+/*Footer Service*/
+#footer_menu_service ul {
+    margin-top: 25px;
+    padding-left: 5px;
+}
+/**/
+/*Footer Payment*/
+#footer_menu_payment p {
+    margin-top: 20px;
+    font-family: italic, serif;
+    font-size: 16px;
+}
+.footer_payment_link img {
+    float: left;
+    margin-top: 15px;
+    padding-right: 7px;
+}
+/**/
+/*Footer*/
+#footer {
+    color: #898989;
+    clear: both;
+
+}
+#footer_text {
+    width: 420px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    padding-left: 60px;
+    font-family: Arial, serif;
+    font-size: 14px;
+}
+#footer_nav {
+    width: 180px;
+    height: 15px;
+    margin-left: 850px;
+}
+.footer_nav_link {
+    display: block;
+    width: 20px;
+    height: 25px;
+    background: url("../images/button/sprite.png") no-repeat;
+    margin: 6px;
+}
+.footer_nav_link_2 {
+    background-position: -40px 0;
+}
+.footer_nav_link_3 {
+    background-position: -75px 0;
+}
+.footer_nav_link_4 {
+    background-position: -120px 0;
+}
+.footer_nav_link_5 {
+    background-position: -155.4px 0;
+}
+.round_footer_nav {
+    display: block;
+    float: left;
+    width: 22px;
+    height: 28px;
+    margin-right: 13px;
+    margin-top: -5px;
+}
