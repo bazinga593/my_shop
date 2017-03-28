@@ -7,9 +7,7 @@ def login_page(request):
     return render(request, 'menu/login.html')
 
 
-def registration(request):
-
-
+# def registration(request):
 
 def login(request):
     if request.method == 'POST':
